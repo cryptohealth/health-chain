@@ -19,7 +19,7 @@ Official CryptoHealth: [CryptoHealth](https://www.hl7.org/fhir/index.html)
 ### History
 
 | TYPE  | URL | DESCRIPTION 
-| ------------- | ------------- |
+| ------------- | ------------- | ------------- |
 | GET | /patient  |  get the patient history
 
 
