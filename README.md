@@ -1,39 +1,36 @@
-<style>
-.body{
+![](https://avatars1.githubusercontent.com/u/64392648?s=200&v=4)
+### Features
 
-}
-.alert-warning {
-  color: rgb(0,200,0);
-}
-.request-block{
-    height: '200px';
-    width: '400px';
-    display: 'flex';
-    flexDirection: 'column';
-    border: '1px black solid';
-}
-</style>
+- REST SmartContract FHIR API
+- Fhir resources available: **Clinical**  , ~~**Diagnosis**~~, ~~**Medication**~~, , ~~**Workflow**~~, ~~**Financial**~~
+- Organization Tokens
+- User Tokens
 
-# Routes
+Official Fhir: [FHIR](https://www.hl7.org/fhir/index.html)
+Official CryptoHealth: [CryptoHealth](https://www.hl7.org/fhir/index.html)
 
-BaseUrl: https://api.cryptohealth/
+# Get Started
 
-## Patient Routes:
-### getPatientBucket
+> Our Base Url End-Point: https://api.cryptohealth/
 
-<div class="request-block">
-TYPE: <i class="alert-warning"> GET </i> 
-URL '/patient'
-DESCRIPTION: 'Create new Patient'
-</div>
+[TOC]
+
+## Patient:
+### History
+
+| TYPE  | URL | DESCRIPTION 
+| ------------- | ------------- |
+| GET | /patient  |  get the patient history
 
 
-### createPatient
+### Create
+
+
 TYPE: POST
 URL '/patient'
 DESCRIPTION: 'Create new Patient'
 
-### updatePatient
+### Update
 TYPE: PUT
 URL '/patient'
 DESCRIPTION: 'Create new Patient'
@@ -54,12 +51,12 @@ URL '/patient/telecom'
 DESCRIPTION: 'Create new Patient'
 
 ## AllergyIntolerance
-### createAllergyIntolerance
+### create
 TYPE: POST
 URL '/allergy'
 DESCRIPTION: 'Create new Patient'
 
-### updateAllergyIntolerance
+### update
 TYPE: POST
 URL '/allergy'
 DESCRIPTION: 'Create new Patient'
@@ -76,3 +73,11 @@ DESCRIPTION: 'Create new Patient'
 
 
 ## FamilyHistory
+
+
+
+
+
+
+
+
