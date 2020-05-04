@@ -13,71 +13,38 @@ Official CryptoHealth: [CryptoHealth](https://www.hl7.org/fhir/index.html)
 
 > Our Base Url End-Point: https://api.cryptohealth/
 
-[TOC]
+## User:
+| TYPE  | URL | DESCRIPTION |
+| - | - | - |
+| POST | /user/oauth/google  | Authenticates patient with Google credentials |
+| POST | /user/oauth/local | Authenticates patient with CryptoHealth credentials |
+| GET | /user | Gets user info |
+| PUT | /user | Creates a user |
+| DELETE | /user | Deletes a user |
+
+## Organization:
+| TYPE  | URL | DESCRIPTION |
+| - | - | - |
+| POST | /organization | Authenticates organization with Google credentials |
+| GET | /organization | Gets the organization info |
+| PUT | /organization | Creates a organization |
+| DELETE | /organization | Deletes a organization |
 
 ## Patient:
-### History
+| TYPE  | URL | DESCRIPTION |
+| - | - | - |
+| POST | /patient | Creates new patient |
+| GET | /patient  | Gets a patient info |
+| PUT | /patient | Updates a patient |
+| POST | /patient/address | Creates new address for a patient |
+| POST | /patient/contact | Creates new contact for a patient |
+| POST | /patient/telecom | Creates a new telecom for a patient |
 
-| TYPE  | URL | DESCRIPTION 
-| ------------- | ------------- | ------------- |
-| GET | /patient  |  get the patient history
-
-
-### Create
-
-
-TYPE: POST
-URL '/patient'
-DESCRIPTION: 'Create new Patient'
-
-### Update
-TYPE: PUT
-URL '/patient'
-DESCRIPTION: 'Create new Patient'
-
-### insertAddress
-TYPE: POST
-URL '/patient/address'
-DESCRIPTION: 'Create new Patient'
-
-### insertContact
-TYPE: POST
-URL '/patient/contact'
-DESCRIPTION: 'Create new Patient'
-
-### insertTelecom
-TYPE: POST
-URL '/patient/telecom'
-DESCRIPTION: 'Create new Patient'
-
-## AllergyIntolerance
-### create
-TYPE: POST
-URL '/allergy'
-DESCRIPTION: 'Create new Patient'
-
-### update
-TYPE: POST
-URL '/allergy'
-DESCRIPTION: 'Create new Patient'
-
-### insertNote
-TYPE: POST
-URL '/allergy/note'
-DESCRIPTION: 'Create new Patient'
-
-### insertReaction
-TYPE: POST
-URL '/allergy/reaction'
-DESCRIPTION: 'Create new Patient'
-
-
-## FamilyHistory
-
-
-
-
-
-
-
-
+## Allergies:
+| TYPE  | URL | DESCRIPTION |
+| - | - | - |
+| GET | /allergy  | Gets a patient allergy info |
+| POST | /allergy | Creates a new allergy for a patient |
+| PUT | /allergy | Updates a patient allergy |
+| POST | /allergy/note | Creates a new patient allergy note |
+| POST | /allergy/reaction | Creates a new patient allergy reaction |
