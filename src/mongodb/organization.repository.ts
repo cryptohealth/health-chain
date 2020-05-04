@@ -1,6 +1,6 @@
 import {Model} from 'mongoose'
 
-import IStore from '../interfaces/store.type.d';
+import IStore from '../interfaces/user.type.d';
 
 
 export default (Model:Model<IStore, {}>) => {

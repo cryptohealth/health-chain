@@ -22,8 +22,8 @@ const mongodb = () => {
     });
 }
 
-const organization = OrganizationRepo(OrganizationSchema)
-const user = UserRepo(UserSchema)
+const Organization = OrganizationRepo(OrganizationSchema)
+const User = UserRepo(UserSchema)
 
 export default mongodb
-export {organization, user}
+export {Organization, User}
