@@ -1,0 +1,29 @@
+
+
+// Usecases
+import makeUser from './users'
+import makeOrganizations from './organizations'
+import makeContracts from './contracts'
+import twilio from './twilio'
+// Repositories
+import {Customer} from '../mongodb/index'
+
+import Web3 from 'web3'
+const abi = {}
+
+console.log(abi)
+var web3 = new Web3('ws://localhost:8546');
+
+var PatientFactoryContract = web3.eth.Contract
+var contractAddress = '/* our contract address on Ethereum after deploying */'
+
+// var contracts = PatientFactoryContract.at(contractAddress)
+
+
+
+const contracts = makeContracts()
+const user = makeUser(Customer)
+const organization = makeOrganizations(Customer)
+
+
+export default {twilio, contracts, user, organization}
