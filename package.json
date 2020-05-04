@@ -1,0 +1,45 @@
+{
+  "name": "cryptohealth",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "webpack:server": "webpack --config webpack.server.dev.js --watch",
+    "webpack:start": "nodemon --watch build --exec node build/bundle.js",
+    "dev": "npx npm-run-all --parallel webpack:*",
+    "build": "webpack --config webpack.server.prod.js",
+    "test": "jest",
+    "solidity:compile": "node ./solidity/index"
+  },
+  "devDependencies": {
+    "@openzeppelin/cli": "^2.8.2",
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.6",
+    "@types/mongoose": "^5.7.14",
+    "@types/node": "^13.13.4",
+    "@types/passport-jwt": "^3.0.3",
+    "jest": "^25.5.4",
+    "nodemon": "^2.0.3",
+    "npm-run-all": "^4.1.5",
+    "solc": "^0.6.6",
+    "truffle": "^5.1.24",
+    "ts-loader": "^7.0.2",
+    "typescript": "^3.8.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "@types/cookie-parser": "^1.4.2",
+    "@types/passport": "^1.0.3",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.11",
+    "passport": "^0.4.1",
+    "passport-google-plus-token": "^2.1.0",
+    "passport-jwt": "^4.0.0",
+    "twilio": "^3.43.0",
+    "web3": "^1.2.7"
+  }
+}
