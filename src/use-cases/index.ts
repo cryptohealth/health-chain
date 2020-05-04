@@ -6,7 +6,7 @@ import makeOrganizations from './organizations'
 import makeContracts from './contracts'
 import twilio from './twilio'
 // Repositories
-import {Customer} from '../mongodb/index'
+import {Organization, User} from '../mongodb/index'
 
 import Web3 from 'web3'
 const abi = {}
@@ -22,8 +22,8 @@ var contractAddress = '/* our contract address on Ethereum after deploying */'
 
 
 const contracts = makeContracts()
-const user = makeUser(Customer)
-const organization = makeOrganizations(Customer)
+const user = makeUser(User)
+const organization = makeOrganizations(Organization)
 
 
 export default {twilio, contracts, user, organization}
