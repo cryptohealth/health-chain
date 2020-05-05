@@ -1,5 +1,5 @@
 import {Model} from 'mongoose'
-import ICustomer from '../interfaces/customer.type.d';
+import ICustomer from '../interfaces/user.type.d';
 
 
 export default (Model:Model<ICustomer, {}>) => {

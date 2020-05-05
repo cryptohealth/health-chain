@@ -13,11 +13,7 @@ console.log(source)
 
 var input = {
     language: 'Solidity',
-    sources: {
-      'test.sol': {
-        content: 'contract C { function f() public { } }'
-      }
-    },
+    sources: source,
     settings: {
       outputSelection: {
         '*': {
@@ -30,6 +26,8 @@ var input = {
 
   
 const output = solc.compile(JSON.stringify(input))
+
+
 
 
 // for (var contractName in output.contracts['test.sol']) {

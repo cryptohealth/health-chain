@@ -1,11 +1,11 @@
 import {Model} from 'mongoose'
 
-import IStore from '../interfaces/user.type.d';
+import IOrganization from '../interfaces/user.type.d';
 
 
-export default (Model:Model<IStore, {}>) => {
+export default (Model:Model<IOrganization, {}>) => {
     return Object.freeze({
-        createUser: async (customer:any) => {
+        createOrganization: async (customer:any) => {
             return await Model.create(customer)
         },
         findByEmail: async (email:string) => {
@@ -17,7 +17,7 @@ export default (Model:Model<IStore, {}>) => {
         findByIdAndDelete: async (id:string) => {
             return await Model.findByIdAndDelete(id)
         },
-        findByIdAndUpdate: async (id:string, data:IStore) => {
+        findByIdAndUpdate: async (id:string, data:IOrganization) => {
             return await Model.findByIdAndUpdate(id, data)
         },
         findByIdAndDesactive: async (id: string) => {

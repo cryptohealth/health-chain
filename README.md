@@ -2,7 +2,7 @@
 ### Features
 
 - REST SmartContract FHIR API
-- Fhir resources available: **Clinical**  , ~~**Diagnosis**~~, ~~**Medication**~~, , ~~**Workflow**~~, ~~**Financial**~~
+- Fhir resources available: **Clinical**  , ~~**Diagnosis**~~, ~~**Medication**~~, ~~**Workflow**~~, ~~**Financial**~~
 - Organization Tokens
 - User Tokens
 

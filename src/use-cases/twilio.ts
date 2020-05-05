@@ -15,6 +15,7 @@ const ResourceMessage = (displayName:string, resourceName:string):string => {
         Acabou de ser adicionado um ${resourceName} ao seu histório, ${displayName}.
     `
 }
+
 export default {
     newMessage: (patient:any, resource:any) => {
         const msg = ResourceMessage(patient.name.given, resource.type)
