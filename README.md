@@ -7,7 +7,8 @@
 - User Tokens
 
 Official Fhir: [FHIR](https://www.hl7.org/fhir/index.html)
-Official CryptoHealth: [CryptoHealth](https://www.hl7.org/fhir/index.html)
+
+Official CryptoHealth: [CryptoHealth](https://cryptohealth.surge.sh/)
 
 # Get Started
 
