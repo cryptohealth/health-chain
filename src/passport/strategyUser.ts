@@ -7,8 +7,8 @@ let makeStrategy = ({createUser}:any) => {
       const iss = profile.iss
       const id = profile.sub
        // Find the user specified in token
-      // const user = await createUser(id);
-      const user = id
+      const user = await createUser(id);
+      console.log(iss)
        
        // If user doesn't exists, handle it
        if (!user) {

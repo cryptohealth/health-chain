@@ -1,7 +1,7 @@
 const makeAuth = ({ md5, is }: any) => {
   return (profile: any) => {
     const secret = "sdasdasfggsd";
-
+    console.log(is)
     const activated = true
 
     const user = {

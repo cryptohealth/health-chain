@@ -1,12 +1,12 @@
 import mongoose from 'mongoose'
-import ICustomer from '../interfaces/customer.type'
+import ICustomer from '../interfaces/user.type'
 var Schema = mongoose.Schema;
 
-var CustomerSchema = new Schema({
+var UserSchema = new Schema({
     id:  {
         type: String,
         required: true,
-        max: [12,]
+        max: [12]
       },
     externalId:  String,
     provider:  String,
@@ -27,4 +27,4 @@ var CustomerSchema = new Schema({
     source: [{ body: String, date: Date }]
 });
 
-export default mongoose.model<ICustomer>('Customer', CustomerSchema);
+export default mongoose.model<ICustomer>('Customer', UserSchema);
